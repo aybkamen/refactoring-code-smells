@@ -1,7 +1,9 @@
-describe("Product should", () => {
-  // TODO: Product spec
-});
+import { Product } from "../src/Product";
 
-test("test framework working", async () => {
-  expect(true).toBe(true);
+describe("Product should", () => {
+  test("TODO: name it later", async () => {
+    const product = new Product(10);
+
+    expect(product.total()).toBe(12.1);
+  });
 });
