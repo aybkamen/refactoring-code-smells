@@ -1,7 +1,8 @@
 export class Product {
-  constructor(price: number) {}
+  constructor(private price: number) {}
 
   total(): number {
-    return 12.1;
+    const vat = 0.21;
+    return this.price * (1 + vat);
   }
 }
